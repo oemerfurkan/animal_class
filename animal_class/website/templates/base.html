@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="animal_class">Animal Class: </label>
+        <input type="text" id="animal_class" name="animal_class"><br>
+        <label for="token">Token: </label>
+        <input type="text" id="token" name="token"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% block message%}
+    {% endblock%}
+
+    {% with messages = get_flashed_messages(with_categories=true) %} 
+        {% if messages %}
+        {%for message in messages%}
+        {{message}}
+        {%endfor%}
+        {%endif%}
+    {% endwith %}
+</body>
+</html>

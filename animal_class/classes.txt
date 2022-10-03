@@ -1,0 +1,4 @@
+mammal : 100
+reptile : 101
+birds : 102
+fishes : 103

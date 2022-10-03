@@ -1,0 +1,25 @@
+[
+    {
+        "animal_class" : "mammal",
+        "token" : "100",
+        "animals" : ["Cow", "Dog", "Cat", "Human"]
+    },
+
+    {
+        "animal_class" : "reptile",
+        "token" : "101",
+        "animals" : ["Alligator", "Crocodile", "Serpent", "Snake"]
+    },
+
+    {
+        "animal_class" : "birds",
+        "token" : "102",
+        "animals" : ["Eagle", "Peacock", "Turkey", "Vulture", "Owl"]
+    },
+
+    {
+        "animal_class" : "fishes",
+        "token" : "103",
+        "animals" : ["Eel", "Catfish", "Anchovy", "Snapper"]
+    }
+]
